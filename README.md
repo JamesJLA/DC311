@@ -1,1 +1,1 @@
-pulled data from dc311 for a simple database using python
+pulled data from dc311 for a simple database using python and postgres
