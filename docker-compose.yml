@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  dc311_pg:
+    image: postgres:15
+    container_name: pg-monitor
+    restart: always
+    environment:
+      POSTGRES_USER: monitor_user
+      POSTGRES_PASSWORD: monitor_pass
+      POSTGRES_DB: monitor_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
